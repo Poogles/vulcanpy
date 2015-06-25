@@ -102,8 +102,6 @@ class Vulcan:
         resp = requests.post(self.endpoint +
                              "/v2/backends/{}/servers".format(backend),
                              data=json.dumps(payload))
-        print(payload)
-        print(resp.text)
 
         return resp.json()
 
